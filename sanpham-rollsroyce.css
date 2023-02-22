@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color-1: #5CE1E6 ;
+    --primary-color-2: #BE4222 ;
+    --whilte-color: #fff;
+    --text-color: #00000;
+    --background-color: #D9D9D9;
+}
+html {
+    font-family: 'Baloo 2', cursive;
+}
+body{
+    overflow-x: hidden;
+}
+.grid {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.grid_full-width {
+    width:100%;
+}
+.grid_row {
+    display:flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.col-8{
+    width: 12.5%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#header{
+    position: sticky;
+    top: 0px;
+    position: -webkit-sticky;
+    background-color:white;
+     width: 100vw;
+     height:100px ;
+     overflow: hidden;
+}
+.container{
+
+}
+.header_logo{
+
+}
+.logo_link{
+
+}
+.logo_img{
+   width: 90px;
+   margin: 3px 0 0 50px;
+}
+.nav{
+   line-height: 100px;
+    margin-left: 110px;
+}
+.nav_list{
+  display: flex;
+ line-height: 100px;
+
+}
+.nav_list-item{
+    color: black;
+   list-style: none;
+   padding: 0 30px;
+}
+.nav_list-item:hover .nav_list-item--link{
+    color: var(--primary-color-1);
+    transition: 0.2s ease-out;
+}
+.nav_list-item--link{
+   text-decoration: none;
+   font-size: 20px;
+   color: var(--text-color);
+   font-weight: 900;
+}
+.nav_list-item--icon{
+     padding: 0 10px;
+}
+.banner{
+    background-image: url("./hinh/banner.png");
+    background-size: cover;
+    height: 600px;
+}
+.column{
+    width: 25%;
+    float: right;
+}
+.san-pham{
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+.san-pham .ten{
+
+    font-weight: 100%;
+    font-size: large;
+    font-variant: normal ;
+    color:green;
+}
+.san-pham .img{
+    max-width: 100px;
+}
+.gia{
+    color:#5CE1E6;
+    font-weight: bold;
+    font-size: large;
+}
+.san-pham .gia del{
+    color:red;
+}
+nav>a{
+    color: black;
+    text-decoration: none;
+    padding:0px 20px ;
+}
+.grid>nav>a:hover{
+    color:#5CE1E6;
+}
+.hinhSP{
+    height: 200px;
+    width: 98%;
+    
+}
+img:hover{
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+}
+.xemthem:hover{
+    
+    color: #5CE1E6;
+}
+.xemthem1{
+    padding: 0px 0px 0px 500px ;
+}
+.icons{
+    padding: 0 20px;
+}
+
+#footer{
+    height: 600px;
+    background-image: url("./hinh/hinhfooder.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+#footer::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+.footer_title{
+   font-size: 70px;
+   font-weight: 900;
+   text-shadow: 0 0 5px #fff;
+   color: var(--primary-color-1);
+   padding-top: 30px;
+}
+.footer_content{
+  margin-top: 20px;
+  float: left;
+}
+.content_1{
+    width: 33.3333%;
+}
+.content_2{
+    width: 25%;
+    margin-left: 100px;
+}
+.content_3{
+    width: 25%;
+    margin-left: 100px;
+}
+.content_title{
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+}
+.content_text-list{
+   
+}
+.content_text-list_item{
+   display: flex;
+   align-items: center;
+   list-style: none;
+   padding: 10px 0;
+   
+}
+.fa-solid{
+
+}
+.fa-location-dot{
+
+}
+.text-list_item--icon{
+    color: rgba(255,255,255,0.7);
+} 
+
+.text-list_item--link{
+    font-size: 20px;
+   color: rgba(255,255,255,0.7);
+   text-decoration: none;
+   margin-left: 10px;
+}
+.fa-phone{
+
+}
+.store_list-button{
+   width: 100%;
+   background-color: #fff;
+   text-align: center;
+   border-radius: 5px;
+   padding: 10px 0;
+   margin-top: 10px;
+   transition: all 0.2s ease-out;
+}
+.store_list-button:hover{
+   background-color: #5CE1E6;
+   transition: all 0.2s ease-in;
+   cursor: pointer;
+}
+.store_list-button:hover .store_list-button-link{
+  color: #ffff;
+  font-size: 19px;
+  transition: all 0.2s ease-in;
+}
+.store_list-button-link{
+   text-decoration: none;
+   color: var(--text-color);
+   font-weight: 900;
+   font-size: 20px;
+   transition: all 0.2s ease-out;
+} 
+.fa-envelope{
+
+}
+.social-contact{
+  width: 100%;
+  margin-top: 30px;
+}
+.social-contact_list{
+   display: flex;
+   justify-content: space-around;
+}
+.social-contact_list-item{
+     list-style: none;
+     transition: all 0.2s ease-out;
+    
+}
+.social-contact_list-item:hover{
+   transform: translateY(-10px);
+   transition: all 0.2s ease-in;
+}
+.social-contact_list-item--link{
+   font-size: 40px;
+   color: #ffff;
+}
+.social-contact_list-item--link:hover{
+  
+}
+
+
+.social-contact_list-item--icon{
+
+}
+.fa-brands{
+
+}
+.fa-facebook{
+
+}
+.fa-tiktok{
+
+}
+.fa-youtube{
+
+}
+.fa-instagram{
+
+}
+.content_title{
+
+}
+.content_text{ 
+    font-size: 25px;
+    color: rgba(255,255,255,0.7);
+    margin-top: 50px;
+}
+.info_register{
+  width: 100%; 
+  position: relative;
+}
+.info_register-input{
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 10px;
+  outline: none;
+
+}
+.info_register-btn{
+   width: 100px;
+   height: 34px;
+   font-size: 16px;
+   font-weight: 900;
+   font-family: var(--text-font);
+   color: #ffff;
+   background-color: black;
+   position: absolute;
+   right: 5px;
+   top: 5px;
+   cursor: pointer;
+   box-shadow: inset 0 0 0 0 var(--primary-color-1);
+   transition: all 0.2s ease-out;
+
+}
+.info_register-btn:hover{
+    box-shadow: inset 100px 0 0 0 var(--primary-color-1);
+    transition: all 0.2s ease-in;
+}
+.hinhSP1{
+    box-shadow: 1000px;
+    width: 100%;
+    height: 500px;
+}
+.hinhgiu{
+    background-image: url("./hinh/hínhuperms.jpg");
+    background-attachment:fixed ;
+    background-size: 100%;
+    background: cover;
+}
+.lmao{
+    background: cover;
+    background-image: url("./hinh/hínhuperms.jpg");
+    background-size: cover; 
+    height: 100px;
+    background-attachment: fixed;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+
+
+
